@@ -2,15 +2,165 @@
   "name": "tg",
   "version": 2,
   "routes": [
-    {"src": "/pluto/(.*)","dest": "https://pluto.web.telegram.org/$1"},
-    {"src": "/venus/(.*)","dest": "https://venus.web.telegram.org/$1"},
-    {"src": "/aurora/(.*)","dest": "https://aurora.web.telegram.org/$1"},
-    {"src": "/vesta/(.*)","dest": "https://vesta.web.telegram.org/$1"},
-    {"src": "/flora/(.*)","dest": "https://flora.web.telegram.org/$1"},
-    {"src": "/pluto-1/(.*)","dest": "https://pluto-1.web.telegram.org/$1"},
-    {"src": "/venus-1/(.*)","dest": "https://venus-1.web.telegram.org/$1"},
-    {"src": "/aurora-1/(.*)","dest": "https://aurora-1.web.telegram.org/$1"},
-    {"src": "/vesta-1/(.*)","dest": "https://vesta-1.web.telegram.org/$1"},
-    {"src": "/flora-1/(.*)","dest": "https://flora-1.web.telegram.org/$1"}
+    {
+      "src": "/pluto/(.*)",
+      "dest": "https://pluto.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/venus/(.*)",
+      "dest": "https://venus.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/aurora/(.*)",
+      "dest": "https://aurora.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/vesta/(.*)",
+      "dest": "https://vesta.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/flora/(.*)",
+      "dest": "https://flora.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/pluto-1/(.*)",
+      "dest": "https://pluto-1.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/venus-1/(.*)",
+      "dest": "https://venus-1.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/aurora-1/(.*)",
+      "dest": "https://aurora-1.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/vesta-1/(.*)",
+      "dest": "https://vesta-1.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/flora-1/(.*)",
+      "dest": "https://flora-1.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/zws1:443/(.*)",
+      "dest": "https://zws1.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/zws2:443/(.*)",
+      "dest": "https://zws2.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/zws3:443/(.*)",
+      "dest": "https://zws3.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/zws4:443/(.*)",
+      "dest": "https://zws4.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": "/zws5:443/(.*)",
+      "dest": "https://zws5.web.telegram.org/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    },
+    {
+      "src": ".*",
+      "methods": ["OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    }
   ]
 }
